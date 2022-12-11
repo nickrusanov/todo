@@ -1,0 +1,110 @@
+/* Reset and base styles
+==============================*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body {
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+/* HTML5 display-role reset for older browsers
+==============================*/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+/* Image
+==============================*/
+
+img {
+    display: block;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* List
+==============================*/
+
+ul, ul li {
+    list-style: none;
+}
+
+
+/* Links
+==============================*/
+
+a, a:link, a:visited, a:hover  {
+    text-decoration: none;
+}
+
+
+/* Form
+==============================*/
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* Address
+==============================*/
+
+address {
+  font-style: normal;
+}
+
+
+/* Table
+==============================*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Reduced motion
+==============================*/
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,95 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font: 1rem/1.5 'Roboto';
+}
+
+.container {
+	width: 100%;
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+.title {
+	margin-bottom: .5rem;
+
+	text-align: center;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.task-list {
+	height: 50vh;
+	padding: 1.5rem 2rem;
+	margin-bottom: 1rem;
+}
+
+.task-form {
+	display: flex;
+	justify-content: space-between;
+	gap: .5rem;
+}
+
+.task-list,
+.task-input {
+	border: 2px solid rgb(202, 181, 171);
+	border-radius: 1rem;
+	background-color: rgb(233, 226, 223);
+}
+
+.task-input {
+	width: 100%;
+	padding: .5rem 1rem;
+}
+
+.task-input:focus,
+.task-add:focus {
+	outline: none;
+	border: 2px solid rgb(202, 119, 80);
+}
+
+.task-add {
+	white-space: nowrap;
+	padding: .5rem 1rem;
+	border: 2px solid rgb(202, 181, 171);
+	border-radius: 1rem;
+	background-color: rgb(233, 226, 223);
+
+	transition: all .2s ease;
+}
+
+.task-add:hover,
+.task-input:hover {
+	background-color: rgb(235, 229, 227);
+	box-shadow: 0 0 .5rem rgb(235, 229, 227);
+	border: 2px solid rgb(206, 145, 118);
+
+}
+
+.task-add:active {
+	transform: scale(.95);
+}
+
+.task {
+	display: block;
+	margin-bottom: .5rem;
+
+	position: relative;
+}
+
+.task:after {
+	content: '';
+	width: 0;
+	height: 2px;
+
+	position: absolute;
+	bottom: .5rem;
+	left: 0;
+	background-color: black;
+}
+
+.task--complite:after {
+	width: 100%;
+}
